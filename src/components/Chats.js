@@ -3,8 +3,17 @@ import { useHistory } from "react-router-dom";
 import { ChatEngine } from "react-chat-engine";
 import { auth } from "../firebase";
 
+import { useAuth } from "../contexts/AuthContext";
+
 const Chats = () => {
   const history = useHistory();
+
+  const { user } = useAuth();
+  // { user } will hold the { user } values we provided
+  // to AuthContextProvider through value prop in AuthContext.js
+  // <AuthContext.Provider value={value}>
+  // {value} holds the user data
+  console.log(user);
 
   const handleLogout = async () => {
     await auth.signOut();
