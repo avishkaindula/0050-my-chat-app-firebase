@@ -1,6 +1,6 @@
 # A Realtime Chat App Created Using React , ChatEngine and Firebase  
 
-URL for this application : https://myfirebasechatproject.netlify.app/  
+URL for this Deployed Web App : https://myfirebasechatproject.netlify.app/  
 
 This is a Realtime Chat Application similar to WhatsApp which is created by using Firebase and ChatEngine.  
 
